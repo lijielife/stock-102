@@ -4,12 +4,12 @@
 
 ###crontab配置
 -----------------------------------
-  * 9-15 * * 1-5 /data/shell/stock/s.sh<br />
+  \* 9-15 * * 1-5 /data/shell/stock/s.sh<br />
   0 1 * * * /data/shell/stock/mv.sh<br />
 
 ###supervisord配置demo
 -----------------------------------
-[program:email]
+  [program:email]<br />
   command=/usr/local/php5.6/bin/php /data/shell/stock/email/run.php<br />
   user=root<br />
   autostart=true<br />
